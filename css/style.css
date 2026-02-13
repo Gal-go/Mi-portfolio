@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+a {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9e9e9e;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+a:active {
+  color: #9e9e9e;
+}
+
 body {
   margin: 0;
   background: #0a0a0a;
@@ -251,10 +268,58 @@ body {
   margin-bottom: 5px;
 }
 
+.trabajos-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.trabajos-header h2 {
+  font-size: 2.6rem;
+  letter-spacing: 6px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.trabajos-header h3 {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: #888;
+}
+
+.trabajos-btn {
+  display: block;
+  margin: 60px auto 0 auto;
+  text-align: center;
+}
+
+.galeria-completa video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.galeria-completa video:hover {
+  transform: scale(1.05);
+  filter: brightness(110%);
+}
+
 .seccion h3 {
   font-weight: 600;
   color: #bfbfbf;
 }
+
+.epigrafe {
+  margin-top: 12px;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #777;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 
 .galeria-neutro {
   display: grid;
@@ -335,3 +400,70 @@ footer {
   transform: scale(1.05);
   filter: brightness(110%);
 }
+
+@media (max-width: 900px) {
+
+  .sobre-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-imagen {
+    width: 220px;
+    margin-bottom: 30px;
+  }
+
+  .bienvenida {
+    min-width: unset;
+    text-align: center;
+  }
+
+  .bienvenida h2,
+  .bienvenida p {
+    text-align: center;
+  }
+
+  .dossier-card {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .galeria-neutro {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .hero {
+    padding: 80px 20px 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+  }
+
+  .hero nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .seccion {
+    padding: 40px 20px;
+    margin: 60px auto;
+  }
+
+}
+
